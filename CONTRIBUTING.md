@@ -33,4 +33,3 @@ Before you get started, please take a moment to read and understand the followin
 
 - Be respectful and considerate when engaging in discussions.
 - Use clear and concise language in comments and discussions.
-
