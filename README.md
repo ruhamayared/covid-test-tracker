@@ -21,6 +21,8 @@ Stores information about users who have taken an at-home COVID test: test result
   - id: integer (primary key)
   - test_result: string
   - test_type: string
+  - date-taken: string
+  - created-at: timestamp
 
 ## CRUD Routes
 
@@ -34,13 +36,7 @@ The COVID Test Tracker application supports the following CRUD (Create, Read, Up
   - Route: GET /users
   - Parameters: None
 
-- **Update**: Allows users to update their test results.
-  - Route: PUT /users/:id
-  - Parameters: id (integer), result (string)
-
-- **Delete**: Allows users to delete their test records.
-  - Route: DELETE /users/:id
-  - Parameters: id (integer)
+Add a verify page so users can verfiy info before creating.
 
 ## Wireframes
 
