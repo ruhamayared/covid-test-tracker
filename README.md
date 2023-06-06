@@ -42,6 +42,6 @@ Add a verify page so users can verfiy info before creating.
 
 Here are wireframes illustrating the basic layout and design of the COVID Test Tracker application:
 
-![Wireframe 1](link_to_wireframe_1)
-![Wireframe 2](link_to_wireframe_2)
-![Wireframe 3](link_to_wireframe_3)
+<img src="https://i.imgur.com/Xb41t4M.png" width="500">
+<img src="https://i.imgur.com/0U3sdDQ.png" width="500">
+<img src="https://i.imgur.com/dPlINKP.png" width="500">
