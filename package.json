@@ -1,0 +1,25 @@
+{
+  "name": "covid-test-tracker",
+  "version": "1.0.0",
+  "description": "COVID Test Tracker is a simple web application built using the PERN stack (PostgreSQL, Express.js, React, Node.js) that allows users to add their names, select the type of COVID test they have taken, and add their test results. This application provides an easy way for users to track their COVID test history and share their results.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruhamayared/covid-test-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruhamayared/covid-test-tracker/issues"
+  },
+  "homepage": "https://github.com/ruhamayared/covid-test-tracker#readme",
+  "dependencies": {
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "knex": "^2.4.2",
+    "pg": "^8.11.0"
+  }
+}
