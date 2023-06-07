@@ -31,11 +31,11 @@ Stores information about users who have taken an at-home COVID test: test result
 The COVID Test Tracker application supports the following CRUD (Create, Read, Update, Delete) operations:
 
 - **Create**: Allows users to select their test results and the type of test.
-  - Route: POST /users
+  - Route: POST /tests
   - Parameters: test_result (string), test_type (integer)
 
 - **Read**: Allows users to view their test history and test details.
-  - Route: GET /users
+  - Route: GET /tests
   - Parameters: None
 
 Add a verify page so users can verfiy info before creating.
