@@ -23,13 +23,28 @@ db.raw("SELECT 1")
     console.error("Failed to connect to the database:", err)
   })
 
-// Test route to see if backend is working correctly
+// GET route to retrieve all tests for testing purposes
 app.get("/tests", async (req, res) => {
   try {
+    // Fetch all tests from the "tests" table
     const tests = await db.select().from("tests")
     res.json(tests)
   } catch (err) {
     console.error("Error retrieving tests:", err)
+    res.status(500).json({ message: "Internal server error" })
+  }
+})
+
+// POST/CREATE route to add a new test
+app.post("/tests", async (req, res) => {
+  try {
+    // Extract test data from the request body
+    const { test_result, test_type, date_taken } = req.body
+    // Insert a new test into the "tests" table
+    const newTest = await db("tests").insert({ test_result, test_type, date_taken })
+    res.json(newTest)
+  } catch (err) {
+    console.error("Error creating test:", err)
     res.status(500).json({ message: "Internal server error" })
   }
 })

@@ -7,7 +7,7 @@ exports.up = function (knex) {
     table.string("test_result")
     table.string("test_type")
     table.string("date_taken")
-    table.timestamp("created_at").defaultTo(knex.fn.now())
+    table.timestamp("created_at").defaultTo(knex.fn.now()) //Setting the created_at column to default to the current time
   })
 }
 
