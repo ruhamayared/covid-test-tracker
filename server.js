@@ -46,6 +46,11 @@
         return res.status(400).json({ message: "Missing required fields" })
       }
 
+      // Validate data types
+      if (typeof test_result !== "boolean" || typeof test_type !== "string" || !(date_taken instanceof Date)) {
+        return res.status(400).json({ message: "Invalid data types" })
+      }
+
       // Insert a new test into the "tests" table
       const newTest = await db("tests").insert({ test_result, test_type, date_taken })
       res.json(newTest)
